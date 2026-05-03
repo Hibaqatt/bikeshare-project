@@ -70,7 +70,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # ---------------- LOAD DATA ----------------
+    # Load and filter bikeshare dataset based on user input
     df = pd.read_csv(CITY_DATA[city])
 
     # ---------------- CONVERT TO DATETIME ----------------

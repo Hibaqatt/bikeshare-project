@@ -18,9 +18,9 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 
     # valid options
-    cities = ['chicago', 'new york city', 'washington']
-    months = ['all','january', 'february', 'march', 'april', 'may', 'june']
-    days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    city_list = ['chicago', 'new york city', 'washington']
+    month_list = ['all','january', 'february', 'march', 'april', 'may', 'june']
+    day_list = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
    
 
 
@@ -70,7 +70,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # ---------------- LOAD DATA ----------------
+    # Load and filter bikeshare dataset based on user input
     df = pd.read_csv(CITY_DATA[city])
 
     # ---------------- CONVERT TO DATETIME ----------------
